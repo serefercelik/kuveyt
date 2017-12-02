@@ -1,0 +1,18 @@
+{
+    "name": "serefercelik/kuveyt",
+    "description": "Laravel 5.4 Kuveyttürk Sanal Pos",
+    "homepage": "https://github.com/serefercelik/kuveyt",
+    "require": {
+        "illuminate/support": "5"
+    },
+    "autoload": {
+      "psr-4": {
+        "Serefercelik\\Kuveyt\\": "src/"
+      }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+      "illuminate/support": "~5"
+    }
+}
