@@ -1,6 +1,6 @@
 # Laravel 5.4 KuveytTurk Sanal Pos
 
-#Önemli NOT : Bu kütüphane https://github.com/phpuzem/kuveyt'dan forklanmıştır. 
+#Önemli NOT : Bu kütüphane https://github.com/phpuzem/kuveyt'dan forklanmıştır.
 
 Komut satırından bu kodu çalıştırınız:
 ```
@@ -15,7 +15,7 @@ return [
     'providers' => [
         // ...
 
-        Phpuzem\Kuveyt\KuveytServiceProvider::class
+        Serefercelik\Kuveyt\KuveytServiceProvider::class
     ],
 
     // ...
@@ -23,7 +23,7 @@ return [
     'aliases' => [
         // ...
 
-        'Kuveyt'    => Phpuzem\Kuveyt\Facades\Kuveyt::class
+        'Kuveyt'    => Serefercelik\Kuveyt\Facades\Kuveyt::class
     ],
 );
 ```
