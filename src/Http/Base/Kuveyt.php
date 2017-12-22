@@ -18,7 +18,7 @@ class Kuveyt extends BaseClass {
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($ch, CURLOPT_POST, true); //POST Metodu kullanarak verileri gönder
             curl_setopt($ch, CURLOPT_HEADER, false); //Serverdan gelen Header bilgilerini önemseme.
-            curl_setopt($ch, CURLOPT_URL, 'https://boa.kuveytturk.com.tr/sanalposservice/Home/ThreeDModelPayGate'); //Baglanacagi URL
+            curl_setopt($ch, CURLOPT_URL, 'https://boa.kuveytturk.com.tr/sanalposservice/Home/ThreeDModelProvisionGate'); //Baglanacagi URL
             curl_setopt($ch, CURLOPT_POSTFIELDS, '<KuveytTurkVPosMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">'
                 . '<APIVersion>' . Config::get("kuveyt.APIVersion") . '</APIVersion>'
                 . '<OkUrl>' . Config::get("kuveyt.OkUrl") . '</OkUrl>'
