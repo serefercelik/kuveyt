@@ -35,7 +35,7 @@ class Kuveyt extends BaseClass {
             . '<MerchantOrderId>' . $this->orderid . '</MerchantOrderId>'
             . '<TransactionSecurity>' . Config::get("kuveyt.TransactionSecurity") . '</TransactionSecurity>'
             . '<TransactionSide>' . Config::get("kuveyt.Type") . '</TransactionSide>'
-            . '</KuveytTurkVPosMessage>');
+            . '</KuveytTurkVPosMessage>';
         try
         {
             $ch = curl_init();
