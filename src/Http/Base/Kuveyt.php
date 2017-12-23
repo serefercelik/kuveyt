@@ -44,7 +44,7 @@ class Kuveyt extends BaseClass {
             curl_setopt($ch, CURLOPT_POST, true); //POST Metodu kullanarak verileri gönder
             curl_setopt($ch, CURLOPT_HEADER, false); //Serverdan gelen Header bilgilerini önemseme.
             curl_setopt($ch, CURLOPT_URL, 'https://boa.kuveytturk.com.tr/sanalposservice/Home/ThreeDModelPayGate'); //Baglanacagi URL
-            curl_setopt($ch, CURLOPT_POSTFIELDS,$xml);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //Transfer sonuçlarini al.
             $data = curl_exec($ch);
             curl_close($ch);
