@@ -14,7 +14,7 @@ class BaseClass {
     protected $amount;
     protected $customerid;
     protected $cardexpiredateyear;
-    protected $cardtype = "MASTERCARD";
+    protected $cardtype = "MasterCard";
     protected $InstallmentCount = 0;
     protected $batchid = 0;
     protected $bag = [];
