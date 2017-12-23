@@ -34,13 +34,14 @@ class Kuveyt extends BaseClass {
                 . '<CardHolderName>' . $this->name . '</CardHolderName>'
                 . '<CardType>' . $this->cardtype . '</CardType>'
                 . '<BatchID>' . $this->batchid . '</BatchID>'
+                . '<TransactionType>' . Config::get("kuveyt.Type") . '</TransactionType>'
                 . '<InstallmentCount>' . $this->InstallmentCount . '</InstallmentCount>'
                 . '<Amount>' . $this->amount . '</Amount>'
                 . '<DisplayAmount>' . $this->amount . '</DisplayAmount>'
                 . '<CurrencyCode>' . Config::get("kuveyt.CurrencyCode") . '</CurrencyCode>'
                 . '<MerchantOrderId>' . $this->orderid . '</MerchantOrderId>'
                 . '<TransactionSecurity>' . Config::get("kuveyt.TransactionSecurity") . '</TransactionSecurity>'
-                . '<TransactionType>' . Config::get("kuveyt.TransactionSecurity") . '</TransactionType>'
+                . '<TransactionSide>' . Config::get("kuveyt.Type") . '</TransactionSide>'
                 . '</KuveytTurkVPosMessage>');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //Transfer sonuçlarini al.
             $data = curl_exec($ch);
