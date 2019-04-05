@@ -1,6 +1,6 @@
 # Laravel 5.4 KuveytTurk Sanal Pos
 
-#Önemli NOT : Bu kütüphane https://github.com/phpuzem/kuveyt'dan forklanmıştır.
+#Önemli NOT : Bu kütüphane https://github.com/phpuzem/kuveyt 'dan forklanmıştır.
 
 Komut satırından bu kodu çalıştırınız:
 ```
